@@ -1,13 +1,14 @@
 # <div align="center">📋 React To-Do List</div>
 
-<img src="./.github/main.png" />
+<img src="./public/images/main.png" />
 
-<p align="center">A simple, volatile to-do list application built with React and Hooks 📋</p>
+<p align="center">A simple, volatile to-do list application built with React, Hooks and Redux 📋</p>
 
 ## 🛠️ Technologies
 
 <ul>
   <li><a href="https://reactjs.org/">React</a></li>
+  <li><a href="https://reactjs.org/">Redux</a></li>
 </ul>
 
 ## ⚙️ Requirements
@@ -21,7 +22,7 @@
 ## 🚀 Installation
 
 ```
-$ git clone https://github.com/gabrielsanttana/react-todolist
+$ git clone https://github.com/trinhhuong244/reactjs2020.git
 $ cd react-todolist
 $ npm install
 $ npm start

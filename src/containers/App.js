@@ -1,33 +1,14 @@
-import React, { useState } from 'react';
-import TodoItem from "../components/TodoItem";
-import 'public/css/App.css';
+import React from 'react';
 import Head from '../components/Head';
 import Body from '../components/Body';
+import Filter from '../components/Filter';
 
-function App() {
-    const [input, setInput] = useState("");
-    const [items, setItems] = useState([]);
-
-    function addItem(event) {
-        setItems(prevData => {
-            return [...prevData, input];
-        });
-
-        setInput("");
-    }
-
-    function removeItem(id) {
-        setItems(prevData => {
-            return prevData.filter((item, index) => {
-                return index !== id;
-            })
-        });
-    }
-
+const App = () => {
     return (
         <div className="todolist">
             <Head />
             <Body />
+            <Filter />
         </div>
     );
 }

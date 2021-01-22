@@ -1,16 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import TodoItem from './TodoItem';
 
-const Body = () => {
+function Body() {
+    const todolist = useSelector(state => state.todos);
     return (
         <div className="items">
             <ul>
-                {items.map((item, index) => (
-                    <TodoItem
-                        key={index}
-                        id={index}
-                        item={item}
-                        onCheck={removeItem}
-                    />
+                {todolist.map((item) => (
+                    <TodoItem item={item} />
                 ))}
             </ul>
         </div>

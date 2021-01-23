@@ -5,6 +5,7 @@ const initState = [{
     mark: false
 }]
 
+// sai: không dùng map để map từ object to object được.
 const TodoReducer = (state = initState, action) => {
     switch (action.type) {
         case 'ADD_TODO':

@@ -4,6 +4,7 @@ import TodoItem from './TodoItem';
 
 function Body() {
     const todolist = useSelector(state => state.todos);
+    console.log(todolist);
     return (
         <div className="items">
             <ul>
